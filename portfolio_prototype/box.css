@@ -1,0 +1,79 @@
+.effects {
+	padding-left: 15px;
+}
+
+.effects .img {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin-bottom: 5px;
+	width: 25%
+}
+
+.effects .img:nth-child(n) {
+	margin-right: 5px;
+}
+
+.effects .img:first-child {
+	margin-left: -15px;
+}
+
+.effects .img:last-child {
+	margin-right: 0;
+
+}
+
+.effects .img img {
+	display: block;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	height: auto;
+}
+
+.overlay {
+	display: block;
+	position: absolute;
+	z-index: 20;
+	background: rgba(0, 0, 0, 0.8);
+  	overflow: hidden;
+  	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+
+a.close-overlay {
+	display: block;
+  	position: absolute;
+  	top: 0;
+  	right: 0;
+  	z-index: 100;
+  	width: 45px;
+  	height: 45px;
+  	font-size: 20px;
+  	font-weight: 700;
+  	color: #fff;
+  	line-height: 45px;
+  	text-align: center;
+  	background-color: #000;
+  	cursor: pointer;
+}
+a.close-overlay.hidden {
+  	display: none;
+}
+
+a.expand {
+  	display: block;
+  	position: absolute;
+  	z-index: 100;
+  	width: 60px;
+  	height: 60px;
+  	border: solid 5px #fff;
+  	text-align: center;
+  	color: #fff;
+  	line-height: 50px;
+  	font-weight: 700;
+  	font-size: 30px;
+  	border-radius: 30px;
+}

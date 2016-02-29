@@ -1,0 +1,92 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #a1c6b3;
+}
+
+.wrap {
+	overflow: hidden;
+	margin: 10px;
+}
+
+.thumbnail {
+	width: 25%;
+	padding-bottom: 25%;
+	position: relative;
+	float: left;
+}
+
+.content img{
+	margin: 20px;
+	border: 1px solid #80af96;
+	float: left;
+	width: 190px;
+}
+.overlay {
+    position:relative;
+
+}
+
+.overlay:after {
+	position: absolute;
+  	content:"";
+  	top:0;
+  	left:0;
+  	width:100%;
+  	height:100%;
+  	opacity:0;
+}
+
+.overlay:hover:after  {
+  	opacity: .5;
+}
+
+.thumbnail img{
+	padding-left: 20 px;
+	padding-right: 20 px;
+}
+
+.thumbnail:after {
+	background-color: gray;
+
+}
+
+.content {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	top: 10px;
+	bottom: 10px;
+	overflow: hidden;
+}
+
+@media only screen and (max-width : 480px) {
+   /* Smartphone view: 1 tile */
+   .thumbnail {
+      width: 100%;
+      padding-bottom: 100%;
+   }
+}
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+   /* Tablet view: 2 tiles */
+   .thumbnail {
+      width: 50%;
+      padding-bottom: 50%;
+   }
+}
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+   /* Small desktop / ipad view: 3 tiles */
+   .thumbnail {
+      width: 33.3%;
+      padding-bottom: 33.3%;
+   }
+}
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+   /* Medium desktop: 4 tiles */
+   .thumbnail {
+      width: 25%;
+      padding-bottom: 25%;
+   }
+}
+
+

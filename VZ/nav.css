@@ -1,0 +1,30 @@
+header {
+	background-color: #33aeff;
+	font-family: sans-serif;
+	color: white;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333
+	color: ;
+}
+
+li {
+	float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}

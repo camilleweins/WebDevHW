@@ -1,0 +1,88 @@
+body, html {margin: 0; padding:0;}
+
+body {
+	background: #f0f0f0;
+	font-family: 'Letter Gothic Std', sans-serif;
+	font-size: 14px;
+	line-height: 1.6;
+	margin-bottom: 80px;
+}
+#header {	
+	font-size: 18px;
+	letter-spacing: 1px;
+	line-height: 20px;
+	text-align: center;
+	text-decoration: none;
+	z-index: auto;
+}
+.name_header {
+	font-family:'Letter Gothic Std', sans-serif;
+	font-weight:  300;
+	font-size: 42px;
+	letter-spacing: 1px;
+	line-height: 1.3em;
+	margin-top: 52px;
+	margin-bottom: -17px;
+	text-decoration: none;
+}
+.name_header a {
+	color: black;
+	text-decoration: none;
+}
+.name_header a:hover {
+	color: #a1c6b3;
+	text-decoration: none;
+}
+
+.navbar {
+	margin-top: 52px;
+	margin-bottom: -17px;
+	float: left;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	font-family:'Letter Gothic Std', sans-serif;
+	font-size: 18px;
+}
+.navbar ul{
+	clear: left;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	left: 50%;
+	text-align: left;
+
+
+}
+
+.navbar ul li {
+	display: block;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	right: 50%;
+	position: relative;
+
+}
+
+.navbar ul li a {
+	display: block;
+	margin: 0 0 0 1px;
+	padding: 3px 10px;
+	background: #c64b20;
+	color: white;
+	text-decoration: none;
+	line-height: 1.3em;
+	z-index: 1;
+}
+
+.navbar ul li a:hover {
+	color: #a1c6b3;
+	
+	
+}
+
+
