@@ -1,3 +1,13 @@
+html,body{
+	width: auto;
+	height: auto;
+	position: relative;
+}
+
+body {
+
+	overflow: hidden;
+}
 
 #uxcontent {
 	font-size: 18px;
@@ -5,17 +15,16 @@
 	line-height: 20px;
 	text-align: center;
 	text-decoration: none;
-
 }
 
-.uxnavbar.sticky {
+.uxnavbar {
 	background: #c64b20;
 	top: 30%; 
-    position: fixed;
-
-	/*float: left;
+    position:fixed;
+	left: 0%;
 	width: auto;
-	height: 3.5rem;*/
+	height: 3.5rem;
+	z-index: auto;
 }
 .uxnavbar ul {
 
@@ -24,81 +33,84 @@
 	text-align: center;
 }
 
-/*.uxnavbar ul li {
+.uxnavbar ul li:nth-child(4n+1), #main .panel:nth-child(4n+1) {
+	background: rgb(0,180,255);
+}
 
-	float: left;
-	list-style: none;
+.uxnavbar ul li:nth-child(4n+2), #main .panel:nth-child(4n+2) {
+	background: rgb(255,65,180);
+}
+.uxnavbar ul li:nth-child(4n+3), #main .panel:nth-child(4n+3) {
+	background: rgb(0,255,180);
+}
+.uxnavbar ul li:nth-child(4n+4), #main .panel:nth-child(4n+4) {
+	background: rgb(159,180,55);
+}
+
+.uxnavbar ul li {
+	display: inline-block;
 	margin: 0;
 	padding: 0;
 
-}*/
+}
 
 .uxnavbar ul li a {
-	display: block;
+	display: inline;
 	margin: 0 0 0 1px;
 	padding: 3px 10px;
 	background: #c64b20;
 	color: white;
 	text-decoration: none;
 	line-height: 1.3em;
+	z-index: auto;
+}
+
+.panel {
+	vertical-align: middle;
+	margin-top: 150px;
+	margin-bottom: -17px;
+	width: 50%;
+	height: 50%;
+	z-index: auto;
+	-webkit-transform: translateZ(0);
+	transform: translateZ;
+	-webkit-transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .uxnavbar ul li a:hover {
 	color: #a1c6b3;
 }
 
-#uxtext {
-	margin: auto;
-	text-align: left;
-	display: inline-block;
-	
+#top {
+	float: right;
+	background: #a1c6b3;
+	margin-right: 20%;
+	text-decoration: none;
+	font-size: 36px;
 }
 
-.panel {
-	width: 50%;
-	height: 50%;
-	z-index: 0;
-	-webkit-transition: -webkit-transform 0.6s ease-in-out;
-    transition: transform 0.6s ease-in-out;
-   /* -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;*/
-}
-
-#nicu {
-	float: left;
-	display: inline-block;
-}
-/*
-.panel p {
+/*.panel p {
 	text-align: left;
 	display: inline-block;
-}
-/*nav {
+}*/
+/*.uxnavbar {
 	width: 50%;
 	padding-top: .5rem;
 
-}
-nav ul{
+}*/
+/*.uxnavbar ul{
 	list-style: none;
 	width: inherit;
 	margin: 0;
-}
+}*/
 
-nav ul li:nth-child(4n+1), #main .panel:nth-child(4n+1) {
-	background: rgb(0,180,255);
-}
 
-nav ul li:nth-child(4n+2), #main .panel:nth-child(4n+2) {
-	background: rgb(255,65,180);
-}
-nav ul li:nth-child(4n+3), #main .panel:nth-child(4n+3) {
-	background: rgb(0,255,180);
-}
-nav ul li:nth-child(4n+4), #main .panel:nth-child(4n+4) {
-	background: rgb(159,180,55);
-}
 
-nav ul li a {
+
+/*nav ul li a {
 	color: #fff;
 	text-decoration: none;
 }
@@ -123,7 +135,7 @@ nav ul li a {
 	top: 33%;
 	text-align: center;
 	margin: 0;
-}
+}*/
 
 a[ id="nicu"]:target ~ #main article.panel {
 	-webkit-transform: translateY( 0px);
@@ -142,6 +154,7 @@ a[ id="testing"]:target ~ #main article.panel {
 	-webkit-transform: translateY( -1500px);
     transform: translateY( -1500px );
 }
+/*
 #uxnav a {
 	text-decoration: none;
 	text-align: left;
