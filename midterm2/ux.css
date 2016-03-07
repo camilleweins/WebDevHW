@@ -1,0 +1,30 @@
+
+.uxcontent{
+	float: left;
+	display: inline-block;
+	padding: 10px;
+	margin: 0 0 2.5% 2.5%;
+	background: #fff;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	font-size: 1rem;
+	vertical-align: top;
+	box-shadow: 0 0 5px #ddd;
+	box-sizing: border-box;
+	-mox-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.uxcontent img{
+	display: block;
+	line-height: 2.5em;
+	max-width: 50%;
+	height: auto;
+	margin: 0 0 10px;
+	margin-left: auto;
+    margin-right: auto
+}
+
+.uxcontent a:hover{
+	border: #a1c6b3;
+}
