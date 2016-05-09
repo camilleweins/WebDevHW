@@ -1,0 +1,338 @@
+body {
+	margin: 0;
+	background: white;
+	font-family: 'Letter Gothic Std', sans-serif;
+}
+
+.top-nav {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 100vw;
+
+}
+
+.top-nav li {
+	display: inline;
+	
+}
+
+.top-nav a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 1vw;
+	font-size: (.2vw + 1vh);
+	color: black;
+}
+
+.top-nav a:hover {
+	color: #ffcc66;
+}
+
+#main-nav-bar {
+	position: fixed;
+	height: 100vh;
+	width: 16vw;
+	text-align: center;
+}
+
+.main-nav hr {
+	border-style: dotted;
+}
+
+.main-nav {
+	padding: .3vw;
+	margin: 0;
+}
+
+.main-nav li {
+	display: block;
+	padding: 30px;
+}
+
+.main-nav li a:hover {
+	color: #ffcc66;
+	margin: 0;
+
+}
+
+.main-nav a {
+
+	font-size: 1vw;
+	text-decoration: none;
+	color: black;
+}
+
+#name a{
+	font-size:1.5vw; /*will replace with a logo?*/
+	color: black;
+	text-decoration: none;
+}
+
+#name a:hover {
+	color: #ffcc66;
+	font-weight: bold;
+
+}
+
+#right-nav-bar {
+	float: right;
+	position: calc(2vw + 5vh);
+}
+
+.right-nav {
+	margin: 0;
+	position: fixed;
+
+}
+
+.right-nav li {
+	top: 15vh;
+	display: block;
+	position: relative;
+	right: 20vw;
+}
+
+.right-nav a {
+	font-size: calc(.3vw + 1vh + 1vmin);
+	text-decoration: none;
+	color: black;
+}
+
+.content {
+	width: 45vw;
+	/*width: 36vw;*/
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+}
+
+.content p {
+	text-align: left;
+	color: black;
+	width: 45vw;
+}
+
+.content h1 {
+	/*font-size: 1vw;*/
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 100vw;
+}
+
+.content h3 {
+	font-size: 2vw;
+}
+
+.content img {
+	position: relative;
+	padding: 5vh;
+	width: 40vw;
+
+}
+
+#background {
+	margin-top: .01vh;
+	height: 500vh;
+}
+
+#research {
+	margin-top: .01vh;
+	height: 500vh;
+}
+
+#design {
+	margin-top: .01vh;
+	height: 500vh;
+}
+
+#prototype {
+	margin-top: .01vh;
+	height: 500vh;
+}
+
+#about-me {
+	width: 36vw;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+}
+
+.gallery-content {
+	height: 36vh;
+	display: table;
+	margin: 0 auto;
+	color: black;
+}
+
+.gallery-content ul{
+	min-width: 5vw;
+	list-style: none;
+
+}
+
+.gallery-content li {
+	display: inline-block;
+	position: relative;
+}
+
+.gallery-content a {
+	text-decoration: none;
+	display: inline;
+}
+
+.gallery-content h2 {
+	margin: 0;
+	padding: 6.5vh;
+	text-align: center;
+}
+
+#about-content section {
+	margin: 0;
+}
+
+#p5Container {
+	margin: 0;
+	position: fixed;
+	padding: 0;
+	width: 100vw;
+}
+
+.overlay {
+	position: relative;
+
+}
+
+.overlay img {
+	float: left;
+	padding: .2vw;
+	padding-bottom: 5vh;
+	width: 30vw;
+}
+
+.bottom-nav {
+	visibility: hidden;
+}
+
+
+@media only screen and (max-width: 700px) {
+	#main-nav-bar {
+		display: none;
+	}
+	
+	.bottom-nav {
+		position: fixed;
+		visibility: visible;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		width: 100vw;
+		bottom: 0;
+	}
+
+	.bottom-nav li {
+		list-style: none;
+		display: inline;
+		padding: 5px 5px 5px 5px;
+		border: 1px solid;
+		border-spacing: 1vh;
+		background-color: white;
+	}
+
+	.bottom-nav a {
+		font-size: 6vw;
+		text-align: center;
+		text-decoration: none;
+
+	}
+
+
+	.gallery-content li {
+		margin-left: 10vmin;
+		position: relative;
+	}
+
+	.gallery-content a {
+		text-decoration: none;
+		display: inline;
+	}
+
+	.gallery-content h2 {
+		width: 56vmin;
+		padding: 6.5vh;
+		text-align: center;
+	}
+
+	.overlay {
+		position: relative;
+		display: inline;
+	}
+
+	.overlay img {
+		padding: .2vw;
+		width: 60vw;
+	}
+
+	#p5Container {
+		display: none;
+	}
+
+	#right-nav-bar {
+		display: none;
+		float: right;
+		position: calc(2vw + 5vh);
+	}
+
+	.content {
+		width: 100%;
+		color: black;
+	}
+
+	.content p {
+		margin: 0;
+		max-width: 45vw;
+		color: black;
+		font-size: 2.5vmin;
+	}
+
+	.content h1 {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		width: 60vw;
+	}
+
+	.content h3 {
+		font-size: 4vw;
+
+	}
+
+	.content img {
+		position: relative;
+		padding: 5vh;
+		width: 70vw;
+
+	}
+
+	#background {
+		margin-top: .01vh;
+		height: 50vh;
+	}
+
+	#research {
+		margin-top: .01vh;
+		height: 100vh;
+	}
+
+	#design {
+		margin-top: .01vh;
+		height: 100vh;
+	}
+
+	#prototype {
+		margin-top: .01vh;
+		height: 100vh;
+	}
+}

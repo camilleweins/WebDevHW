@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html> 
+
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+	<div id="navigation">
+		<div id="main-nav-bar">
+			<ul class="main-nav">
+				<li id="name"><a>Camille Weins</a></li>
+				<br>
+				<hr>
+				<br>
+				<li><a href="#ux">UX</a></li>
+				<li><a href="#client">Illustration</a></li>
+				<li><a href="#neural">Code</a></li>
+				<li><a href="#about">About</a></li>
+			</ul>
+		</div>
+
+		<div id="top">
+			<ul class="top-nav">
+				<li><a href="home.html">NICU</a></li>
+				<li><a href="yelp.html">Yelp</a></li>
+				<li><a href="#alexa">Alexa</a></li>
+				<li><a href="#cvi">CVI</a></li>
+			</ul>
+
+			
+		</div>
+
+		<div id="right-nav-bar">
+			<ul class="right-nav">
+				<li><a href="#top">Background</a></li>
+				<li><a href="#research">Research</a></li>
+				<li><a href="#design">Design</a></li>
+				<li><a href="#prototype">Prototype</a></li>
+			</ul>
+		</div>
+	</div>
+
+	
+	<br>
+	<br>
+	<div class="content">
+		
+		<section id="background">
+			<img src="img/400x300.jpg">
+			<h3>Background</h3>
+			<p>Text for ux content.</p>
+		</section>
+
+		<section id="research">
+			<img src="img/400x300.jpg">
+			<h3>User Research</h3>
+			<p>Text for ux content.</p>
+		</section>
+
+		<section id="design">
+			<img src="img/400x300.jpg">
+			<h3>Design</h3>
+			<p>Text for ux content.</p>
+		</section>
+
+		<section id="prototype">
+			<img src="img/400x300.jpg">
+			<h3>Prototype</h3>
+			<p>Text for ux content.</p>
+		</section>
+	</div>
+
+<script type="text/javascript">
+	$(#background, #prototype).on('click', function(e){
+		e.preventDefault();
+		var target = $(this).get(0)0.id == 'background' ? $(#prototype) : $(#background);
+		$('html, body').stop().animate({
+			scrollTop: target.offset().top
+		}, 1000);
+	});
+</script>
+
+</body>
+
+</html>

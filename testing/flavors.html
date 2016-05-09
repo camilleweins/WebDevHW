@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <body>
+        <script type="text/javascript">
+        var flavors = [{
+                "name": "Rocky Road",
+                "id": "rocky_road",
+                "ingredients": ["vanilla ice cream", "chocolate chips", "marshmallows", "almonds"],
+                "allergies": ["dairy", "nuts"]
+            },
+
+            {
+                "name": "Vanilla",
+                "id": "vanilla",
+                "ingredients": ["milk", "cream", "sugar", "vanilla extract"],
+                "allergies": ["dairy"]
+            },
+
+            {
+                "name": "Strawberry Sorbet",
+                "id": "strawberry_sorbet",
+                "ingredients": ["water", "strawberries", "lemon juice", "sugar", "vanilla extract"],
+                "allergies": ["strawberries"]
+            },
+
+            {
+                "name": "Chocolate",
+                "id": "chocolate",
+                "ingredients": ["milk", "cocoa", "egg yolks", "sugar", "vanilla extract", "semisweet chocolate"],
+                "allergies": ["egg", "chocolate", "dairy"]
+            }
+        ];
+        document.write('<div>' + flavors[0].ingredients.join(' | ') + '</div>'); 
+        document.write('<div>' + flavors[2].allergies[0] + '</div>');
+        document.write('<div>' + flavors[2].ingredients[0] + '</div>');
+        document.write('<div>' + flavors[3].ingredients.length + '</div>');
+        document.write('<div>');
+        for (var i = 0; i < flavors.length; i++) {
+            document.write(flavors[i].name + ' ');
+        }
+        document.write('</div>');
+        </script>
+    </body>

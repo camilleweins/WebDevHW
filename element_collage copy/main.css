@@ -1,0 +1,122 @@
+body {margin: 0; background: #f2f2f2; }
+
+.top-nav {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 100vw;
+}
+
+.top-nav li {
+	display: inline;
+	
+}
+
+.top-nav a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 1vw;
+	font-size: (.2vw + 1vh);
+	color: black;
+}
+
+.top-nav a:hover {
+	color: #ffcc66;
+}
+
+#main-nav-bar {
+	position: fixed;
+	height: 100vh;
+	width: 22vw;
+	background: white;
+	text-align: center;
+
+}
+
+.main-nav hr {
+	border-style: dotted;
+}
+
+.main-nav {
+	padding: .3vw;
+	margin: 0;
+	/*width: 20%;
+	height: 100%;
+	position: relative;*/
+
+
+}
+
+.main-nav li {
+	display: block;
+	padding: 30px;
+
+}
+
+.main-nav li a:hover {
+	color: #ffcc66;
+	margin: 0;
+
+}
+
+.main-nav a {
+
+	font-size: 2vw;
+	text-decoration: none;
+	color: black;
+}
+
+#name a{
+	font-size:2.5vw; /*will replace with a logo?*/
+	color: black;
+	text-decoration: none;
+}
+
+#right-nav-bar {
+	float: right;
+	position: calc(2vw + 5vh);
+}
+
+.right-nav {
+	margin: 0;
+	position: fixed;
+
+}
+
+.right-nav li {
+	top: 15vh;
+	display: block;
+	position: relative;
+	right: 20vw;
+}
+
+.right-nav a {
+	font-size: calc(.3vw + 1vh + 1vmin);
+	text-decoration: none;
+	color: black;
+}
+
+.content {
+	margin-top: .01vh;
+	width: 30vw;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+
+}
+
+.content p {
+	text-align: left;
+	color: black;
+}
+
+.content h3 {
+	font-size: 2vw;
+}
+
+.content img {
+	width: 36vw;
+	height: 25vw;
+}
+
+

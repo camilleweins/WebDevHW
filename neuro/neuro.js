@@ -48,3 +48,4 @@ trainer.train(x, [0.7]);
 // actual output by looking into its 'w' field:
 var predicted_values = net.forward(x);
 console.log('predicted value: ' + predicted_values.w[0]);
+
