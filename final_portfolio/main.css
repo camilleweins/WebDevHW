@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	background: white;
-	font-family: 'Chaparral Pro Caption', sans-serif;
+	font-family: "chaparral-pro-caption", sans-serif;
 }
 
 .top-nav {
@@ -165,7 +165,7 @@ body {
 	display: table;
 	margin: 0 auto;
 	color: black;
-	margin-bottom: 100px;
+
 }
 
 .gallery-content ul{
@@ -278,6 +278,7 @@ body {
 
 	.gallery-content {
 		margin: 0;
+		margin-bottom: 100px;
 
 	}
 
@@ -404,10 +405,16 @@ body {
 	}
 
 	#text-size {
+
 	margin-left: 15vw;
 	margin-right: 5vw;
 	padding: 0;
 	width: 60vw;
+	}
+
+	#text-size a{
+		text-decoration: none;
+		color: black;
 	}
 
 	#text {
