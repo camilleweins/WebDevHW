@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <script src="https://use.typekit.net/ixq4awe.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="main.css">
@@ -12,7 +14,7 @@
         <div id="main-nav-bar">
             <ul class="main-nav">
                 <br>
-                <li id="name"><a href="home.html">Camille Weins</a></li>
+                <li id="name"><a href="index.html">Camille Weins</a></li>
                 <br>
                 <hr>
                 <br>
@@ -43,18 +45,16 @@
         <section id="background">
             <img src="img/amail-start.svg">
             <h3>Background</h3>
-            <div id="resize-text-box">
-            <p>We created a productivity skill (app) for the Amazon Echo that gives the user access to his/her gmail account. This product is universally accessible (excluding individuals with auditory disabilities) and the target audience is almost everyone. However, for this specific project, our primary audience is people with low vision or blindness; especially, older individuals who recently lost their vision and have limited technical experience and knowledge.</p></div>
+            <div class="text">
+            We created a productivity skill (app) for the Amazon Echo that gives the user access to his/her gmail account. This product is universally accessible (excluding individuals with auditory disabilities) and the target audience is almost everyone. However, for this specific project, our primary audience is people with low vision or blindness; especially, older individuals who recently lost their vision and have limited technical experience and knowledge.</div>
         </section>
         <section id="research">
-            
             <h3>User Research</h3>
-            <div id="text">
-                <p>We broke down the project into two parts: user interface design and back-end development. For the user interface design, since it's not a visual interface, but a voice interface, the research was based on how the user activates and interacts with the Echo verbally.</p>
+            <div class="text">
+                We broke down the project into two parts: user interface design and back-end development. For the user interface design, since it's not a visual interface, but a voice interface, the research was based on how the user activates and interacts with the Echo verbally.
                 <br>
-                <p>My role was to find users and conduct interviews in order to come up with real utterances that people will actually use.</p>
+                My role was to find users and conduct interviews in order to come up with real utterances that people will actually use.
                 <br>
-                <p>
                     <h2>USER 1: Nina</h2>
                     <ul>
                         <li><strong>About Alexa:</strong> Likes that Alexa answers everything Uses Alexa for really basic things such as news, timer, Pandora. "Do not use as much as I could"</li>
@@ -65,9 +65,9 @@
                         <br>
                         <li><strong>What she does with Gmail:</strong> Basic writing and reading emails Does not use filters or circles</li>
                     </ul>
-                </p>
+                
                 <br>
-                <p>
+                
                     <h2>User 2: Lee</h2>
                     <ul>
                         <li><strong>About Alexa:</strong> Likes the idea of it, did not know it existed (wants to buy it)</li>
@@ -78,38 +78,40 @@
                         <br>
                         <li><strong>What he does with Gmail:</strong> Has trouble with attachments in emails--anything outside the general text is stressful to deal with. Doesn't want the device to describe the attachment, just notify if there is one (will probably ask sender about it in an email)</li>
                     </ul>
-                </p>
-                <p>
+                
+                
                     <h2>User 3: Rebecca</h2>
                     <ul>
                         <li>She is not familiar with Alexa. However, she has experience working with Dragon. She
-mentioned that she usually does not work with voice interfaces with her students.
-</li>
-<br>
-<li>She is an Orientation and Mobility Specialist at LightHouse in Northern California.</li>
+                        mentioned that she usually does not work with voice interfaces with her students.
+                        </li>
+                <br>
+                        <li>She is an Orientation and Mobility Specialist at LightHouse in Northern California.
+                        </li>
                     </ul>
-                </p>
+                
             </div>
         </section>
         <section id="design">
             <img src="img/amail-design.svg">
             <h3>Design</h3>
-            <p>I started off with these utterances for code testing purposes:
-                <ul>
-                    <li>Do I have any new email?</li>
-                    <li>Do I have any new messages?</li>
-                    <li>How many emails do I have?</li>
-                    <li>Open my inbox.</li>
-                    <li>Open my mail box.</li>
-                    <li>Read my emails.</li>
-                    <li>Read emails.</li>
-                    <li>Emails.</li>
-                </ul>
-                <br> The idea behind the progression from short to long utterances is that as the user becomes more familiar with Alexa, he/she will become more comfortable using informal commands. This relates back to Amazon's guidelines about talking to Alexa as if "you were talking to a friend." 
-            </p>
-            <img src="img/amail-userflow.svg">
+            <div class="text">
+                I started off with these utterances for code testing purposes:
+                    <ul>
+                        <li>Do I have any new email?</li>
+                        <li>Do I have any new messages?</li>
+                        <li>How many emails do I have?</li>
+                        <li>Open my inbox.</li>
+                        <li>Open my mail box.</li>
+                        <li>Read my emails.</li>
+                        <li>Read emails.</li>
+                        <li>Emails.</li>
+                    </ul>
+                    <br> The idea behind the progression from short to long utterances is that as the user becomes more familiar with Alexa, he/she will become more comfortable using informal commands. This relates back to Amazon's guidelines about talking to Alexa as if "you were talking to a friend." 
+                
+                <img src="img/amail-userflow.svg">
             <h4>Iteration 1</h4>
-                <p>We tested our first iteration on Nina. In doing so we learned that 
+                We tested our first iteration on Nina. In doing so we learned that 
                     <ul>
                         <li>Gmail-app gets tiring to say and is hard to remember</li> 
                         <li>Labels were being read in an unappealing and confusing manner 
@@ -118,35 +120,35 @@ mentioned that she usually does not work with voice interfaces with her students
                             </ul>
                         </li>
                     </ul>
-                </p>
-                <br>
-            <h4>Iteration 2</h4>
-                <p>We conducted an A/B Test on Lee to see if we would get better results if we used A-mail versus Gmail-app. We also had Nancy test the second iteration of Amail.
+            <h4>Iteration 2</h4>                
+                    We conducted an A/B Test on Lee to see if we would get better results if we used A-mail versus Gmail-app. We also had Nancy test the second iteration of Amail.
 
                     <h5>Lee's Results</h5>
-                    <ul>
-                        <li>Added utterances that Leo kept trying to use to activate A-mail.</li> 
-                        <li>Labels were being read in an unappealing and confusing manner 
-                            <ul>
-                                <li>"Labels are CATEGORY underscore Personal Jasmine Test"</li>
-                            </ul>
-                        </li>
-                    </ul>
-
+                        <ul>
+                            <li>Added utterances that Leo kept trying to use to activate A-mail.</li> 
+                            <li>Labels were being read in an unappealing and confusing manner 
+                                <ul>
+                                    <li>"Labels are CATEGORY underscore Personal Jasmine Test"</li>
+                                </ul>
+                            </li>
+                        </ul>
                     <h5>Nina's Results</h5>
-                    <ul>
-                        <li>Made utterances more consistent with OTHER skills for Alexa such as "what are my labels."</li> 
-                        <li>We also implemented a tutorial that can be accessed at any point during a voice session.</li>
-                    </ul>
-                </p>    
+                        <ul>
+                            <li>Made utterances more consistent with OTHER skills for Alexa such as "what are my labels."</li> 
+                            <li>We also implemented a tutorial that can be accessed at any point during a voice session.</li>
+                        </ul>
+                  
+            </div>  
         </section>
         <section id="prototype">
             <h3>Prototype</h3>
+            <div class="text">
             <video width="500px" controls>
                 <source src="media/demo-3.mp4" type="video/mp4">
                 </video>
                 <br>
-                <p>Here's a video demonstration of our final prototype and a list of the final utterances.
+                <br>
+                Here's a video demonstration of our final prototype and a list of the final utterances.
                     <ul>
                         <li>list my labels</li>
                         <li>give me my labels</li>
@@ -169,9 +171,7 @@ mentioned that she usually does not work with voice interfaces with her students
                         <li>how do i use a-mail</li>
                         <li>easter egg</li>
                     </ul>
-
-                </p>
-            
+            </div>
         </section>
     </div>
     <script type="text/javascript" src="script/jquery-1.8.3.min.js"></script>
@@ -179,10 +179,11 @@ mentioned that she usually does not work with voice interfaces with her students
 </body>
 <div id="mobile-nav-bar">
             <ul class="bottom-nav">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="ux.html">Design</a></li>
-                <li><a href="code.html">Code</a></li>
-                <li><a href="about.html">About</a></li>
+                <a href="index.html"><li>Home</li></a>
+                <a href="ux.html"><li>Design</li></a>
+                <a href="code.html"><li>Code</li></a>
+                <a href="about.html"><li>About</li>
+                </a>
             </ul>
         </div>
 

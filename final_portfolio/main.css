@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	background: white;
-	font-family: 'Letter Gothic Std', sans-serif;
+	font-family: 'Chaparral Pro Caption', sans-serif;
 }
 
 .top-nav {
@@ -165,6 +165,7 @@ body {
 	display: table;
 	margin: 0 auto;
 	color: black;
+	margin-bottom: 100px;
 }
 
 .gallery-content ul{
@@ -176,6 +177,7 @@ body {
 .gallery-content li {
 	display: inline-block;
 	position: relative;
+
 }
 
 .gallery-content a {
@@ -189,8 +191,11 @@ body {
 	text-align: center;
 }
 
-#about-content section {
-	margin: 0;
+#text-size {
+	margin-left: 15vw;
+	padding: 0;
+	width: 60vw;
+	margin-right: 5vw;
 }
 
 #p5Container {
@@ -198,10 +203,13 @@ body {
 	position: fixed;
 	padding: 0;
 	width: 100vw;
+	margin-bottom: 100px;
 }
 
 .overlay {
 	position: relative;
+	font-size: 1.1vw;
+	text-align: center;
 
 }
 
@@ -212,15 +220,29 @@ body {
 	width: 30vw;
 }
 
+#overlay caption {
+	position: inline-block;
+
+}
+
 .bottom-nav {
 	visibility: hidden;
 }
 
 
 @media only screen and (max-width: 700px) {
+	body {
+		margin: 0;
+		padding: 0;
+	}
+
 	#main-nav-bar {
 		display: none;
 	}
+
+	/*#mobile-nav-bar {
+		padding-top: 5vh;
+	}*/
 	
 	.bottom-nav {
 		position: fixed;
@@ -229,51 +251,83 @@ body {
 		padding: 0;
 		text-align: center;
 		width: 100vw;
-		bottom: 0;
+		bottom: 5vh;
+
 	}
 
 	.bottom-nav li {
 		list-style: none;
 		display: inline;
-		padding: 5px 5px 5px 5px;
+		padding: 10px 10px 10px 10px;
 		border: 1px solid;
-		border-spacing: 1vh;
+		border-color: black;
+		border-spacing: .1vw;
 		background-color: white;
+
 	}
 
 	.bottom-nav a {
-		font-size: 6vw;
+		color: black;
+		text-decoration: none;
+		font-size: 4vw;
 		text-align: center;
 		text-decoration: none;
+		padding: 0px 5px 0px 5px;
 
 	}
 
+	.gallery-content {
+		margin: 0;
+
+	}
+
+	.gallery-content ul{
+		margin: 0;
+		padding: 0;
+		min-width: 5vw;
+		list-style: none;
+
+	}
 
 	.gallery-content li {
-		margin-left: 10vmin;
+		margin: 0;
+		width: 50vw;
 		position: relative;
 	}
 
 	.gallery-content a {
 		text-decoration: none;
 		display: inline;
+
 	}
 
 	.gallery-content h2 {
-		width: 56vmin;
-		padding: 6.5vh;
+		margin: 0;
+		left: 20vw;
 		text-align: center;
 	}
 
 	.overlay {
-		position: relative;
-		display: inline;
+	left: 20vw;
+	font-size: 3vw;
+	text-align: center;
+			margin-bottom: 15vh;
+
+}
+
+	.overlay caption {
+		font-size: .2vw;
+		left: 25vw;
+
 	}
 
 	.overlay img {
-		padding: .2vw;
+
 		width: 60vw;
+		padding: 2px;
 	}
+
+	
 
 	#p5Container {
 		display: none;
@@ -282,19 +336,19 @@ body {
 	#right-nav-bar {
 		display: none;
 		float: right;
-		position: calc(2vw + 5vh);
-	}
+}
 
 	.content {
+		margin: 0;
 		width: 100%;
 		color: black;
+
 	}
 
 	.content p {
 		margin: 0;
-		max-width: 45vw;
 		color: black;
-		font-size: 2.5vmin;
+		font-size: 3vw;
 	}
 
 	.content h1 {
@@ -311,28 +365,52 @@ body {
 
 	.content img {
 		position: relative;
-		padding: 5vh;
+		/*padding: 5vh;*/
 		width: 70vw;
 
 	}
 
 	#background {
-		margin-top: .01vh;
-		height: 50vh;
+		margin-left: 5vw;
+		margin-right: 3vw;
+		margin-top: 10vh;
+		height: 100vh;
 	}
 
 	#research {
-		margin-top: .01vh;
-		height: 100vh;
+		margin-left: 5vw;
+		margin-right: 3vw;
+		margin-top: 10vh;
+		height: 250vh;
 	}
 
 	#design {
-		margin-top: .01vh;
-		height: 100vh;
+		margin-left: 5vw;
+		margin-right: 3vw;
+		margin-top: 10vh;
+		height: 270vh;
 	}
 
 	#prototype {
-		margin-top: .01vh;
+		margin-bottom: 20vh;
+		margin-left: 5vw;
+		margin-right: 3vw;
+		margin-top: 10vh;
 		height: 100vh;
+	}
+
+	#prototype video {
+		width: 90vw;
+	}
+
+	#text-size {
+	margin-left: 15vw;
+	margin-right: 5vw;
+	padding: 0;
+	width: 60vw;
+	}
+
+	#text {
+		margin-right: 5vw;
 	}
 }
