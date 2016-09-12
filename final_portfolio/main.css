@@ -1,7 +1,12 @@
+/*@font-face {
+	font-family: 'Letter Gothic Std Medium';
+	src: url('fonts/Letter Gothic Std Medium.tff');
+}*/
+
 body {
 	margin: 0;
 	background: white;
-	font-family: "chaparral-pro-caption", sans-serif;
+	font-family: 'Letter Gothic Std Medium', 'Helvetica Light', sans-serif;
 }
 
 .top-nav {
